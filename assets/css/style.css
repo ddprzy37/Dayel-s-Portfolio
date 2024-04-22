@@ -1,0 +1,99 @@
+/* style.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+/* About section */
+img.developer-photo {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+/* Work section */
+.applications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.applications a {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+}
+
+.applications a:last-child {
+    margin-right: 0;
+}
+.active {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.applications a img {
+    max-width: calc(100% - 20px); /* Subtracting 20px for the border */
+    height: 250px;
+    border: 2px solid #ddd; /* Adding border around the image */
+    border-radius: 5px; /* Adding border-radius for rounded corners */
+}
+
+.applications a.active img {
+    transform: scale(1.2);
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    .applications {
+        flex-direction: column;
+    }
+
+    .applications a {
+        margin-bottom: 10px;
+    }
+}
