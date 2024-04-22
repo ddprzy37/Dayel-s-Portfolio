@@ -44,6 +44,13 @@ img.developer-photo {
 }
 
 /* Work section */
+#work {
+    text-align: center;
+}
+
+#work h2 {
+    margin-bottom: 20px;
+}
 .applications {
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +67,7 @@ img.developer-photo {
 }
 .active {
     padding-left: 50px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 .applications a img {
     max-width: calc(100% - 20px); /* Subtracting 20px for the border */
@@ -71,6 +78,54 @@ img.developer-photo {
 
 .applications a.active img {
     transform: scale(1.2);
+}
+.application {
+    text-align: center; /* Center-align the content */
+}
+
+.application a {
+    display: block; /* Ensure the link takes up the full width of its container */
+    padding-bottom: 20px; /* Add padding to the bottom of the link */
+}
+
+.application h3 {
+    font-size: 18px; /* Adjust the font size as needed */
+    color: #333; /* Set the color of the title */
+}
+
+
+/* About Section */
+.developer-photo {
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+#about {
+    text-align: center; /* Center-align the text */
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h2 {
+    margin-top: 0; /* Remove default margin */
+}
+footer a {
+    color: #ffa500; /* Set the color of the links to white */
+    text-decoration: none; /* Remove underline */
+}
+footer a:hover {
+    color: #ccc; /* Change color of links on hover */
 }
 
 /* Responsive styles */
